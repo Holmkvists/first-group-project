@@ -4,20 +4,63 @@ body {
 
   background: #fff;
   color: #000;
+  font-size: 12pt;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-  /* background-image: url(...) */
-  width: 500px;
+  background-image: url("../assets/images/4_web.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
 }
 
-@media screen and (min-width: 300) {
+.container {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+  }
+}
+
+main {
+  width: 300px;
+  height: 700px;
+  border: 1px solid blue;
+}
+
+footer {
+  width: 300px;
+  height: 200px;
+  border: 1px solid orange;
+}
+
+/*@media screen and (min-width: 300) { */
   nav {
     #navigation {
     }
 
     .toggle {
+      display: block;
+      position: relative;
+      top: 50px;
+      left: 50px;
+      width: 5%;
     }
 
     #menu {
@@ -28,5 +71,23 @@ header {
 
     .menu-icon {
     }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.4s ease;
+    }
+
+    a:hover
+    {
+      color: #red;
+    }
+
+
   }
 }

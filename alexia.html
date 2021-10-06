@@ -4,34 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
     <link rel="stylesheet" href="css/alexia.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9604976d4b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function openMenu() {
+        document.getElementById("menu").style.width = "300px";
+        document.getElementById("container").style.marginLeft = "300px";
+      }
+      function closeMenu() {
+        document.getElementById("menu").style.width = "0px";
+        document.getElementById("container").style.marginLeft = "0px";
+      }
+    </script>
+    <title>OBSESSIONS</title>
   </head>
+
+  <!-------------------- Navigationen börjar här-------------------------------->
   <header>
-    <!-------------------- Navigationen börjar här-------------------------------->
-    <nav id="navigation">
-      <div id="toggle">
-        <input class="menu-button" type="checkbox" id="menu-button" />
-        <label class="menu-icon" for="menu-button"><span class="navicon"></span></label>
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul id="menu">
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Posters</a></li>
-          <li><a href="#">Smycken<a></li>
-          <li><a href="#">Om oss</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
+    <nav>
+      <div class="nav-container">
+        <div class="collapse">
+          <a href="#" onclick="openMenu()"> <i class="fas fa-bars"></i></a>
+        </div>
+        <div id="menu" class="nav">
+          <a href="#" class="close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </a>
+          <ul class="list">
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">POSTERS</a></li>
+            <li><a href="#">SMYCKEN</a></li>
+            <li><a href="#">KONTAKT</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="box">
+        <div class="h1-container">
+          <h1>SHOP OBSESSIONS</h1>
+        </div>
       </div>
     </nav>
   </header>
-  <!------------------ Bodyn och footerns content kommer ligga här --------------------------->
+
+  <!------------------ Bodyn och footerns content kommer här --------------------------->
   <body>
     <main>
-    <div>lorem ipsum</div>
-    <div>lorem ipsum</div>
+      <div>content</div>
+    </main>
   </body>
-</main>
-<footer></footer>
+  <footer></footer>
 </html>

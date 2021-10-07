@@ -21,7 +21,6 @@ footer {
   width: 100%;
   border: 1px solid black; }
   footer .info {
-    text-decoration: underline;
     height: 100%;
     color: #dbc3f1; }
     footer .info .link {
@@ -30,6 +29,9 @@ footer {
       margin: 10px;
       display: flex;
       gap: 20px; }
+    footer .info a:hover {
+      background-color: yellow;
+      width: 110px; }
 
 @media screen and (min-width: 300px) {
   body {
@@ -49,16 +51,20 @@ footer {
     background-color: #faf5ff;
     width: 100%;
     border: 1px solid black; }
-  .info {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-decoration: underline;
-    height: 100%;
-    color: #dbc3f1; }
-    .info .link {
+    footer .info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 100%;
       color: #dbc3f1; }
-    .info .media {
-      margin: 10px;
-      gap: 20px; } }
+      footer .info .Obsession {
+        margin: 0px 50px;
+        text-decoration: underline; }
+        footer .info .Obsession .link {
+          color: #dbc3f1; }
+      footer .info .media {
+        position: absolute;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px; } }

@@ -1,3 +1,5 @@
+$linkColor: rgb(219, 195, 241);
+
 body {
   margin: 0;
   padding: 0;
@@ -23,17 +25,20 @@ footer {
   border: 1px solid black;
 
   .info {
-    text-decoration: underline;
     height: 100%;
-    color: rgb(219, 195, 241);
+    color: $linkColor;
 
     .link {
-      color: rgb(219, 195, 241);
+      color: $linkColor;
     }
     .media {
       margin: 10px;
       display: flex;
       gap: 20px;
+    }
+    a:hover {
+      background-color: yellow;
+      width: 110px;
     }
   }
 }
@@ -60,26 +65,31 @@ footer {
     background-color: rgb(250, 245, 255);
     width: 100%;
     border: 1px solid black;
-  }
-  .Obsession {
-  }
 
-  .info {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-decoration: underline;
+    .info {
+      display: flex;
+      flex-direction: row;
 
-    height: 100%;
-    color: rgb(219, 195, 241);
+      align-items: center;
 
-    .link {
-      color: rgb(219, 195, 241);
-    }
-    .media {
-      margin: 10px;
-      gap: 20px;
+      height: 100%;
+      color: $linkColor;
+
+      .Obsession {
+        margin: 0px 50px;
+        text-decoration: underline;
+        .link {
+          color: $linkColor;
+        }
+      }
+
+      .media {
+        position: absolute;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
     }
   }
 }

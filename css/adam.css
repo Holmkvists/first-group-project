@@ -41,7 +41,7 @@ footer {
   height: 200px;
   border: 1px solid green; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 675px) {
   main {
     height: 2300px; }
     main section {

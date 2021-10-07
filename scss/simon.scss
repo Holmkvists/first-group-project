@@ -1,4 +1,48 @@
 $linkColor: rgb(219, 195, 241);
+body {
+  line-height: 1.5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1170px;
+
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
 .footer {
   background-color: $linkColor;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: rgb(182, 104, 178);
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500px;
+}
+@media (max-width: 900px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 675px) {
+    .footer-col {
+      width: 100%;
+    }
+  }
 }

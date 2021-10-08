@@ -1,0 +1,20 @@
+body {
+  margin: 0; }
+
+header {
+  background-image: url("../assets/images/4_web.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 100%;
+  border: 1px solid black; }
+
+button btn-primary,
+.btn-close text-reset {
+  color: #b2926c; }
+
+/* MEDIAQUERIES
+    min-width: 300
+    min-width: 600
+    min-width: 1000
+*/

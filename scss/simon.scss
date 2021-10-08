@@ -1,95 +1,48 @@
 $linkColor: rgb(219, 195, 241);
-
 body {
+  line-height: 1.5;
+}
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-header {
-  height: 200px;
-  border: 1px solid black;
-  background-color: burlywood;
+.container {
+  max-width: 1170px;
+
+  margin: auto;
 }
-main {
-  height: 80vh;
-  border: 1px solid black;
-  background-color: blanchedalmond;
-}
-footer {
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  background-color: rgb(250, 245, 255);
-  width: 100%;
-  border: 1px solid black;
-
-  .info {
-    height: 100%;
-    color: $linkColor;
-
-    .link {
-      color: $linkColor;
-    }
-    .media {
-      margin: 10px;
-      display: flex;
-      gap: 20px;
-    }
-    a:hover {
-      background-color: yellow;
-      width: 110px;
-    }
-  }
+  flex-wrap: wrap;
 }
-
-@media screen and (min-width: 300px) {
-  body {
-    margin: 0;
-    padding: 0;
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: $linkColor;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: rgb(182, 104, 178);
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500px;
+}
+@media (max-width: 900px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
   }
-  header {
-    height: 200px;
-    border: 1px solid black;
-    background-color: burlywood;
-  }
-  main {
-    height: 80vh;
-    border: 1px solid black;
-    background-color: blanchedalmond;
-  }
-  footer {
-    display: flex;
-    flex-direction: row;
 
-    background-color: rgb(250, 245, 255);
-    width: 100%;
-    border: 1px solid black;
-
-    .info {
-      display: flex;
-      flex-direction: row;
-
-      align-items: center;
-
-      height: 100%;
-      color: $linkColor;
-
-      .Obsession {
-        margin: 0px 50px;
-        text-decoration: underline;
-        .link {
-          color: $linkColor;
-        }
-      }
-
-      .media {
-        position: absolute;
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
+  @media (max-width: 675px) {
+    .footer-col {
+      width: 100%;
     }
   }
 }

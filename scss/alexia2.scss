@@ -1,7 +1,7 @@
 body {
   margin: 0;
 }
-
+/*
 header {
   background-image: url("../assets/images/4_web.jpg");
   background-size: cover;
@@ -9,6 +9,15 @@ header {
   background-position: top right;
   width: 100%;
   border: 1px solid black;
+} */
+
+.masthead {
+  height: 100vw;
+  min-height: 500px;
+  background-image: url("../assets/images/4_web.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 button btn-primary,

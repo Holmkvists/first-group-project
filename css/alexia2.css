@@ -3,8 +3,11 @@ body {
   margin: 0 auto;
   height: auto;
   color: #000;
-  font-size: 12pt;
-  font-family: "Work Sans", sans-serif; }
+  font-size: 12pt; }
+
+h1,
+li {
+  font-family: "Sora", sans-serif; }
 
 /*Media query för 300px*/
 @media screen and (min-width: 300px) {
@@ -17,10 +20,6 @@ body {
     padding-bottom: 50%;
     position: relative;
     z-index: 1; }
-    .masthead .header-box {
-      position: relative;
-      z-index: 1;
-      background-color: black; }
   /*Styling för navbaren*/
   .navbar {
     position: relative;
@@ -50,15 +49,19 @@ body {
       padding: 1rem 1rem;
       overflow-y: auto; }
   #offcanvasExample {
-    background-color: white;
+    background-color: #b2926c;
     border: none; }
     #offcanvasExample .nav-link {
       text-align: left;
-      color: #b2926c;
+      color: #fff;
       opacity: 1;
       font-size: 1.6rem; }
       #offcanvasExample .nav-link:hover {
-        color: #fff; }
+        color: #000; }
+  .offcanvas-header h1 {
+    color: white;
+    border-bottom: 2px solid #fff;
+    padding: 1px; }
   /*Styling för menyknapp*/
   button {
     color: -internal-light-dark(black, white);
@@ -103,9 +106,10 @@ body {
         padding: 0.5rem 0.5rem;
         margin-top: -0.5rem;
         margin-right: -0.5rem;
-        margin-bottom: -0.5rem; }
-  /* MEDIAQUERIES
+        margin-bottom: -0.5rem; } }
+
+/* MEDIAQUERIES
     min-width: 300
     min-width: 600
     min-width: 1000
-*/ }
+*/

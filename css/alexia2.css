@@ -51,7 +51,7 @@ li {
   #offcanvasExample {
     background-color: #b2926c;
     border: none;
-    width: 300px; }
+    width: 100%; }
     #offcanvasExample .nav-link {
       text-align: left;
       color: #fff;
@@ -122,7 +122,7 @@ li {
   #offcanvasExample {
     background-color: #b2926c;
     border: none;
-    width: 600px; } }
+    width: 100%; } }
 
 @media screen and (min-width: 1000px) {
   .masthead {
@@ -137,7 +137,7 @@ li {
   #offcanvasExample {
     background-color: #b2926c;
     border: none;
-    width: 1000px; } }
+    width: 100%; } }
 
 /* MEDIAQUERIES
     min-width: 300

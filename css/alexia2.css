@@ -50,7 +50,8 @@ li {
       overflow-y: auto; }
   #offcanvasExample {
     background-color: #b2926c;
-    border: none; }
+    border: none;
+    width: 300px; }
     #offcanvasExample .nav-link {
       text-align: left;
       color: #fff;
@@ -107,6 +108,36 @@ li {
         margin-top: -0.5rem;
         margin-right: -0.5rem;
         margin-bottom: -0.5rem; } }
+
+@media screen and (min-width: 600px) {
+  .masthead {
+    max-width: 100%;
+    background-image: url("../assets/images/4_web.jpg");
+    background-size: 100% auto !important;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding-bottom: 50%;
+    position: relative;
+    z-index: 1; }
+  #offcanvasExample {
+    background-color: #b2926c;
+    border: none;
+    width: 600px; } }
+
+@media screen and (min-width: 1000px) {
+  .masthead {
+    max-width: 100%;
+    background-image: url("../assets/images/4_web.jpg");
+    background-size: 100% auto !important;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding-bottom: 50%;
+    position: relative;
+    z-index: 1; }
+  #offcanvasExample {
+    background-color: #b2926c;
+    border: none;
+    width: 1000px; } }
 
 /* MEDIAQUERIES
     min-width: 300

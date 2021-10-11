@@ -11,11 +11,11 @@ if (mediaQuery300.matches) {
   }
 }
 
-const mediaQuery675 = window.matchMedia("(min-width: 675px)");
+const mediaQuery675 = window.matchMedia("(min-width: 601px)");
 
 if (mediaQuery675.matches) {
   function openMenu() {
-    document.getElementById("menu").style.width = "675px";
+    document.getElementById("menu").style.width = "601px";
     document.getElementById("container").style.marginLeft = "300px";
   }
   function closeMenu() {

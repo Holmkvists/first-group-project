@@ -1,0 +1,146 @@
+@charset "UTF-8";
+body {
+  margin: 0 auto;
+  height: auto;
+  color: #000;
+  font-size: 12pt; }
+
+h1,
+li {
+  font-family: "Sora", sans-serif; }
+
+/*Media query för 300px*/
+@media screen and (min-width: 300px) {
+  .masthead {
+    max-width: 100%;
+    background-image: url("../assets/images/4_web.jpg");
+    background-size: 100% auto !important;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding-bottom: 50%;
+    position: relative;
+    z-index: 1; }
+  /*Styling för navbaren*/
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+    .navbar .navbar > .container {
+      display: flex;
+      flex-wrap: inherit;
+      align-items: center;
+      justify-content: space-between; }
+  #sidebar {
+    display: flex;
+    justify-content: flex-start; }
+    #sidebar .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none; }
+    #sidebar .offcanvas-body {
+      flex-grow: 1;
+      padding: 1rem 1rem;
+      overflow-y: auto; }
+  #offcanvasExample {
+    background-color: #b2926c;
+    border: none;
+    width: 100%; }
+    #offcanvasExample .nav-link {
+      text-align: left;
+      color: #fff;
+      opacity: 1;
+      font-size: 1.6rem; }
+      #offcanvasExample .nav-link:hover {
+        color: #000; }
+  .offcanvas-header h1 {
+    color: white;
+    border-bottom: 2px solid #fff;
+    padding: 1px; }
+  /*Styling för menyknapp*/
+  button {
+    color: -internal-light-dark(black, white);
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    margin: 0em;
+    padding: 1px 4px; }
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #b2926c;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+    .btn .btn-primary {
+      color: #b2926c;
+      background-color: transparent !important;
+      border-color: transparent !important; }
+    .btn .btn-primary:hover {
+      color: #b2926c;
+      background-color: transparent !important;
+      border-color: transparent !important; }
+    .btn .btn:hover {
+      color: #b2926c;
+      background-color: transparent !important;
+      border-color: transparent !important; }
+    .btn .btn-primary:focus,
+    .btn btn-check:focus {
+      color: #b2926c;
+      background-color: #fff !important;
+      border-color: #fff !important;
+      box-shadow: #fff !important; }
+      .btn .btn-primary:focus .btn-close,
+      .btn btn-check:focus .btn-close {
+        padding: 0.5rem 0.5rem;
+        margin-top: -0.5rem;
+        margin-right: -0.5rem;
+        margin-bottom: -0.5rem; } }
+
+@media screen and (min-width: 600px) {
+  .masthead {
+    max-width: 100%;
+    background-image: url("../assets/images/4_web.jpg");
+    background-size: 100% auto !important;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding-bottom: 50%;
+    position: relative;
+    z-index: 1; }
+  #offcanvasExample {
+    background-color: #b2926c;
+    border: none;
+    width: 100%; } }
+
+@media screen and (min-width: 1000px) {
+  .masthead {
+    max-width: 100%;
+    background-image: url("../assets/images/4_web.jpg");
+    background-size: 100% auto !important;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding-bottom: 50%;
+    position: relative;
+    z-index: 1; }
+  #offcanvasExample {
+    background-color: #b2926c;
+    border: none;
+    width: 100%; } }
+
+/* MEDIAQUERIES
+    min-width: 300
+    min-width: 600
+    min-width: 1000
+*/

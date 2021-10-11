@@ -52,8 +52,14 @@ footer {
         width: 225px; } }
 
 @media screen and (min-width: 1000px) {
-  .product-container:nth-child(3n) {
-    width: 325px;
+  .product-container:nth-child(1n) {
+    width: 500px;
     height: 510px; }
-    .product-container:nth-child(3n) img {
-      width: 300px; } }
+  .product-container:nth-child(2n) {
+    width: 300px;
+    height: 700px; }
+    .product-container:nth-child(2n) img {
+      width: 275px; }
+    .product-container:nth-child(2n) .product-container:nth-child(3n) {
+      width: 600px;
+      height: 510px; } }

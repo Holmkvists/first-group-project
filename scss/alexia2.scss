@@ -8,19 +8,6 @@ body {
 
 /*Media query för 300px*/
 @media screen and (min-width: 300px) {
-  .text-center,
-  .col-12 {
-    text-align: center !important;
-    margin: 0;
-    padding: 20px;
-    background-color: black;
-  }
-  .fw-light {
-    font-size: 1.5rem;
-    background-color: black;
-    color: white;
-  }
-
   .masthead {
     max-width: 100%;
     background-image: url("../assets/images/4_web.jpg");
@@ -48,70 +35,45 @@ body {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 
-    .nav-link {
-      text-align: center;
-      color: #b2926c;
-      font-size: 1.6rem;
-      &:hover {
-        color: #000;
-      }
-    }
-
     .navbar > .container {
       display: flex;
       flex-wrap: inherit;
       align-items: center;
       justify-content: space-between;
     }
-
-    .row {
-      --bs-gutter-x: 1.5rem;
-      --bs-gutter-y: 0;
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: calc(var(--bs-gutter-y) * -1);
-      margin-right: calc(var(--bs-gutter-x) * -0.5);
-      margin-left: calc(var(--bs-gutter-x) * -0.5);
-    }
   }
 
-  /*Styling för slide-out sidebaren*/
   #sidebar {
+    display: flex;
+    justify-content: flex-start;
+
     .nav {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       padding-left: 0;
       margin-bottom: 0;
       list-style: none;
     }
-
-    .navbar {
-      background-color: #b2926c !important;
-    }
-
-    .offcanvas.show {
-      background-color: #b2926c !important;
-    }
-    .offcanvas-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 1rem;
-      background-color: #b2926c !important;
-    }
-
-    .offcanvas-title {
-      margin-left: 20px;
-      margin-bottom: 0;
-      line-height: 1.5;
-      background-color: #b2926c !important;
-    }
-
     .offcanvas-body {
       flex-grow: 1;
       padding: 1rem 1rem;
       overflow-y: auto;
-      background-color: #b2926c;
+    }
+  }
+
+  #offcanvasExample {
+    background-color: white;
+    border: none;
+
+    .nav-link {
+      text-align: left;
+      color: #b2926c;
+      opacity: 1;
+      font-size: 1.6rem;
+      &:hover {
+        color: #fff;
+      }
     }
   }
 
@@ -123,8 +85,8 @@ body {
     text-align: center;
     align-items: flex-start;
     box-sizing: border-box;
-    background-color: #fff !important;
-    border-color: #fff !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
     margin: 0em;
     padding: 1px 4px;
   }
@@ -134,9 +96,8 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #b2926c;
-    background-color: #000 !important;
-    border-color: #000 !important;
-    padding: 0.375rem 0.75rem;
+    background-color: transparent !important;
+    border-color: transparent !important;
     font-size: 1.2rem;
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
@@ -144,20 +105,20 @@ body {
 
     .btn-primary {
       color: #b2926c;
-      background-color: #fff !important;
-      border-color: #fff !important;
+      background-color: transparent !important;
+      border-color: transparent !important;
     }
 
     .btn-primary:hover {
       color: #b2926c;
-      background-color: #fff !important;
-      border-color: #fff !important;
+      background-color: transparent !important;
+      border-color: transparent !important;
     }
 
     .btn:hover {
       color: #b2926c;
-      background-color: #fff !important;
-      border-color: #fff !important;
+      background-color: transparent !important;
+      border-color: transparent !important;
     }
 
     .btn-primary:focus,
@@ -166,6 +127,13 @@ body {
       background-color: #fff !important;
       border-color: #fff !important;
       box-shadow: #fff !important;
+
+      .btn-close {
+        padding: 0.5rem 0.5rem;
+        margin-top: -0.5rem;
+        margin-right: -0.5rem;
+        margin-bottom: -0.5rem;
+      }
     }
   }
 

@@ -136,6 +136,47 @@ section {
       width: 250px;
       margin-top: 10px; }
 
+.footer-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #b2936c96; }
+
+h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+
+.ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  color: white; }
+
+li {
+  margin: 5px; }
+
+li:hover {
+  background: #b2936cd0; }
+
+.mail {
+  line-height: 2;
+  color: white;
+  text-decoration: none; }
+
+.posision {
+  color: white;
+  text-decoration: none; }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; }
+
 /*Media query för 600px*/
 @media screen and (min-width: 600px) {
   .masthead {
@@ -159,7 +200,11 @@ section {
       width: 250px;
       height: 400px; }
       section .product-container img {
-        width: 225px; } }
+        width: 225px; }
+  .askUsAndFindUs {
+    display: flex;
+    flex-direction: row;
+    gap: 30px; } }
 
 /*Media query för 1000px*/
 @media screen and (min-width: 1000px) {
@@ -183,4 +228,19 @@ section {
       width: 275px;
       height: 440px; }
       section .product-container img {
-        width: 250px; } }
+        width: 250px; }
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly; }
+  .ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    padding: 0; }
+  .social-links {
+    flex-direction: column;
+    gap: 10px; } }

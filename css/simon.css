@@ -1,4 +1,4 @@
-.row {
+.footer-row {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +46,7 @@ li:hover {
     gap: 30px; } }
 
 @media screen and (min-width: 1000px) {
-  .row {
+  .footer-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

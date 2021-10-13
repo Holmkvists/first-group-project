@@ -98,7 +98,7 @@ li {
       border-color: transparent !important;
       font-size: 1.2rem;
       border-radius: 0.25rem;
-      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
       .navbar .btn .btn-primary {
         color: #b2926c;
         background-color: transparent !important;
@@ -149,8 +149,28 @@ main {
         width: 250px; }
     main section .checkout-form {
       width: 275px;
-      height: 1000px;
       border: 5px solid blue; }
+
+.container-checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: #ffd700;
+  background-color: #21a39d; }
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px; }
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px; }
 
 /*Media query för 600px*/
 @media screen and (min-width: 600px) {

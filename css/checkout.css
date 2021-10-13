@@ -163,7 +163,7 @@ main {
     main section .checkout-form {
       grid-area: checkout-form;
       width: 275px;
-      border: 5px solid blue; }
+      border: 5px solid #cfa24f; }
 
 .container-checkout {
   display: flex;
@@ -171,8 +171,8 @@ main {
   justify-content: center;
   align-items: center;
   padding: 30px;
-  color: #ffd700;
-  background-color: #21a39d; }
+  color: #ffd000;
+  background-color: #ad5e2a; }
 
 .checkout {
   display: flex;

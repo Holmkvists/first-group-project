@@ -284,12 +284,11 @@ li {
           }
         }
       }
-
-      .askUsAndFindUs {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-      }
+    }
+    .askUsAndFindUs {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
     }
 
     /*Media query för 1000px*/
@@ -335,26 +334,26 @@ li {
             }
           }
         }
+      }
 
-        .footer-row {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          align-items: flex-start;
-          justify-content: space-evenly;
-        }
-        .ul {
-          display: flex;
-          flex-direction: column;
-          list-style-type: none;
-          text-align: center;
-          padding: 0;
-        }
+      .footer-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
+      }
+      .ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+      }
 
-        .social-links {
-          flex-direction: column;
-          gap: 10px;
-        }
+      .social-links {
+        flex-direction: column;
+        gap: 10px;
       }
     }
   }

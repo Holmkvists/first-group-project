@@ -217,10 +217,10 @@ li {
         height: 400px; }
         section section .product-container img {
           width: 225px; }
-    section .askUsAndFindUs {
-      display: flex;
-      flex-direction: row;
-      gap: 30px; }
+  .askUsAndFindUs {
+    display: flex;
+    flex-direction: row;
+    gap: 30px; }
   /*Media query för 1000px*/ }
 
 @media screen and (min-width: 300px) and (min-width: 600px) and (min-width: 1000px) {
@@ -253,18 +253,18 @@ li {
         height: 440px; }
         section section .product-container img {
           width: 250px; }
-    section .footer-row {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      justify-content: space-evenly; }
-    section .ul {
-      display: flex;
-      flex-direction: column;
-      list-style-type: none;
-      text-align: center;
-      padding: 0; }
-    section .social-links {
-      flex-direction: column;
-      gap: 10px; } }
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly; }
+  .ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    padding: 0; }
+  .social-links {
+    flex-direction: column;
+    gap: 10px; } }

@@ -157,8 +157,8 @@ main {
   justify-content: center;
   align-items: center;
   padding: 30px;
-  color: #ffd000;
-  background-color: #ad5e2a; }
+  color: white;
+  background-color: #d49a74; }
 
 .checkout {
   display: flex;

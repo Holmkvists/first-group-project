@@ -1,63 +1,40 @@
-.row {
+.container-checkout {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  background-color: #b2936c96; }
+  padding: 30px;
+  color: #ffd700;
+  background-color: #21a39d; }
 
-h4 {
+.checkout {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white; }
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px; }
 
-.ul {
-  list-style-type: none;
-  text-align: center;
-  padding: 0;
-  color: white; }
-
-li {
-  margin: 5px; }
-
-li:hover {
-  background: #b2936cd0; }
-
-.mail {
-  line-height: 2;
-  color: white;
-  text-decoration: none; }
-
-.posision {
-  color: white;
-  text-decoration: none; }
-
-.social-links {
+.payment {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px; }
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px; }
 
 @media screen and (min-width: 600px) {
-  .askUsAndFindUs {
+  .checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; }
+  .payment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; }
+  .checkoutPayment {
     display: flex;
     flex-direction: row;
-    gap: 30px; } }
+    gap: 50px; } }
 
 @media screen and (min-width: 1000px) {
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-evenly; }
-  .ul {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    text-align: center;
-    padding: 0; }
-  .social-links {
-    flex-direction: column;
-    gap: 10px; } }
+  .checkoutPayment {
+    gap: 150px; } }

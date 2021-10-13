@@ -98,11 +98,7 @@ li {
       border-color: transparent !important;
       font-size: 1.2rem;
       border-radius: 0.25rem;
-<<<<<<< HEAD
       transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-=======
-      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
->>>>>>> 3f87536d435d3b84a80dac90ca8e05a68d01d42d
       .navbar .btn .btn-primary {
         color: #b2926c;
         background-color: transparent !important;

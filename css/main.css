@@ -98,11 +98,7 @@ li {
       border-color: transparent !important;
       font-size: 1.2rem;
       border-radius: 0.25rem;
-<<<<<<< HEAD
-      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-=======
       transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
->>>>>>> 3f87536d435d3b84a80dac90ca8e05a68d01d42d
       .navbar .btn .btn-primary {
         color: #b2926c;
         background-color: transparent !important;
@@ -221,10 +217,10 @@ li {
         height: 400px; }
         section section .product-container img {
           width: 225px; }
-    section .askUsAndFindUs {
-      display: flex;
-      flex-direction: row;
-      gap: 30px; }
+  .askUsAndFindUs {
+    display: flex;
+    flex-direction: row;
+    gap: 30px; }
   /*Media query för 1000px*/ }
 
 @media screen and (min-width: 300px) and (min-width: 600px) and (min-width: 1000px) {
@@ -257,18 +253,18 @@ li {
         height: 440px; }
         section section .product-container img {
           width: 250px; }
-    section .footer-row {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      justify-content: space-evenly; }
-    section .ul {
-      display: flex;
-      flex-direction: column;
-      list-style-type: none;
-      text-align: center;
-      padding: 0; }
-    section .social-links {
-      flex-direction: column;
-      gap: 10px; } }
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly; }
+  .ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    padding: 0; }
+  .social-links {
+    flex-direction: column;
+    gap: 10px; } }

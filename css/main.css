@@ -171,6 +171,8 @@ li {
     margin: 5px; }
   li:hover {
     background: #b2936cd0; }
+  a:hover {
+    color: white; }
   .mail {
     line-height: 2;
     color: white;

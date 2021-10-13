@@ -38,6 +38,8 @@ a {
       flex-wrap: inherit;
       align-items: center;
       justify-content: space-between; }
+    .navbar .container {
+      max-width: 100%; }
   #sidebar {
     display: flex;
     justify-content: flex-start; }

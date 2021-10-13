@@ -98,7 +98,7 @@ li {
       border-color: transparent !important;
       font-size: 1.2rem;
       border-radius: 0.25rem;
-      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
       .navbar .btn .btn-primary {
         color: #b2926c;
         background-color: transparent !important;
@@ -131,7 +131,7 @@ main {
   margin-bottom: 50px; }
   main section {
     display: grid;
-    grid-template-rows: 395px 140px 1fr;
+    grid-template-rows: 420px 140px 1fr;
     grid-template-areas: "product-container" "product-description" "checkout-form";
     justify-items: center;
     height: auto;
@@ -147,6 +147,10 @@ main {
       main section .product-container img {
         margin-top: 10px;
         width: 250px; }
+      main section .product-container .price-tag {
+        margin-top: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold; }
     main section .product-description {
       grid-area: product-description;
       display: flex;
@@ -164,54 +168,153 @@ main {
       grid-area: checkout-form;
       border: 5px solid #cfa24f;
       width: 275px; }
-  main .container-checkout {
+
+.container-checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: #ffd000;
+  background-color: #ad5e2a; }
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px; }
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px; }
+
+.footer-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #b2936c96; }
+
+h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+
+.ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  color: white; }
+
+li {
+  margin: 5px; }
+
+li:hover {
+  background: #b2936cd0; }
+
+a:hover {
+  color: white; }
+
+.mail {
+  line-height: 2;
+  color: white;
+  text-decoration: none; }
+
+.posision {
+  color: white;
+  text-decoration: none; }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; }
+
+@media screen and (min-width: 600px) {
+  .masthead {
+    max-width: 100%;
+    max-height: 100vh;
+    background-image: url("../assets/images/4_web.jpg");
+    background-size: 100% auto !important;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding-bottom: 50%;
+    position: relative;
+    z-index: 1; }
+  #offcanvasExample {
+    background-color: #b2926c;
+    border: none;
+    width: 100%; }
+  main section {
+    grid-template-rows: 570px 140px 1fr;
+    gap: 50px; }
+    main section .product-container {
+      width: 375px;
+      box-shadow: 0 0 10px 10px lightgray; }
+      main section .product-container img {
+        width: 350px; }
+    main section .product-description {
+      width: 375px;
+      box-shadow: 0 0 10px 10px lightgray; }
+      main section .product-description p {
+        width: 350px; }
+    main section .checkout-form {
+      width: 375px; }
+  .askUsAndFindUs {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    color: #ffd000;
-    background-color: #ad5e2a; }
-  main .checkout {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px; }
-  main .payment {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px; }
-  @media screen and (min-width: 600px) {
-    main section {
-      grid-template-rows: 545px 140px 1fr;
-      gap: 50px; }
-      main section .product-container {
-        width: 375px;
-        box-shadow: 0 0 10px 10px lightgray; }
-        main section .product-container img {
-          width: 350px; }
-      main section .product-description {
-        width: 375px;
-        box-shadow: 0 0 10px 10px lightgray; }
-        main section .product-description p {
-          width: 350px; }
-      main section .checkout-form {
-        width: 375px; } }
-  @media screen and (min-width: 1000px) {
-    main section {
-      grid-template-rows: 620px 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "product-container checkout-form" "product-description checkout-form";
-      justify-content: space-evenly; }
-      main section .product-container {
-        width: 425px; }
-        main section .product-container img {
-          width: 400px; }
-      main section .product-description {
-        width: 425px;
-        height: 140px; }
-        main section .product-description p {
-          width: 375px; }
-      main section .checkout-form {
-        width: 425px; } }
+    flex-direction: row;
+    gap: 30px; } }
+
+@media screen and (min-width: 1000px) {
+  .masthead {
+    max-width: 100%;
+    max-height: 100vh;
+    background-image: url("../assets/images/4_web.jpg");
+    background-size: 100% auto !important;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding-bottom: 50%;
+    position: relative;
+    z-index: 1; }
+  #offcanvasExample {
+    background-color: #b2926c;
+    border: none;
+    width: 100%; }
+  main section {
+    grid-template-rows: 645px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "product-container checkout-form" "product-description checkout-form";
+    justify-content: space-evenly; }
+    main section .product-container {
+      width: 425px; }
+      main section .product-container img {
+        width: 400px; }
+    main section .product-description {
+      width: 425px;
+      height: 140px; }
+      main section .product-description p {
+        width: 375px; }
+    main section .checkout-form {
+      width: 425px; } }
+
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly; }
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  padding: 0; }
+
+.social-links {
+  flex-direction: column;
+  gap: 10px; }

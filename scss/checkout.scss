@@ -234,6 +234,24 @@ main {
 
         gap: 20px;
     }
+<<<<<<< HEAD
+  }
+}
+.container-checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: white;
+  background-color: rgb(212, 154, 116);
+}
+.checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+=======
+>>>>>>> ce937bdb99d04c1f3be460073ac247bd74eaec2e
 
     .payment {
         display: flex;

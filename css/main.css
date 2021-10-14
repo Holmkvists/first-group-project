@@ -29,100 +29,65 @@ li {
     align-items: center;
     justify-content: space-between;
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    /*Styling för navbaren*/
-    /*Styling för menyknapp*/ }
+    padding-bottom: 0.5rem; }
     .navbar .navbar > .container {
       display: flex;
       flex-wrap: inherit;
       align-items: center;
       justify-content: space-between; }
-    .navbar .navbar {
-      position: relative;
+    .navbar .container {
+      max-width: 100%; }
+  #sidebar {
+    display: flex;
+    justify-content: flex-start; }
+    #sidebar .nav {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem; }
-      .navbar .navbar .navbar > .container {
-        display: flex;
-        flex-wrap: inherit;
-        align-items: center;
-        justify-content: space-between; }
-    .navbar #sidebar {
-      display: flex;
-      justify-content: flex-start; }
-      .navbar #sidebar .nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none; }
-      .navbar #sidebar .offcanvas-body {
-        flex-grow: 1;
-        padding: 1rem 1rem;
-        overflow-y: auto; }
-    .navbar #offcanvasExample {
-      background-color: #b2926c;
-      border: none;
-      width: 100%; }
-      .navbar #offcanvasExample .nav-link {
-        text-align: left;
-        color: #fff;
-        opacity: 1;
-        font-size: 1.6rem; }
-        .navbar #offcanvasExample .nav-link:hover {
-          color: #000; }
-    .navbar .offcanvas-header h1 {
-      color: white;
-      border-bottom: 2px solid #fff;
-      padding: 1px; }
-    .navbar button {
-      color: -internal-light-dark(black, white);
-      display: inline-block;
-      text-align: center;
-      align-items: flex-start;
-      box-sizing: border-box;
-      background-color: transparent !important;
-      border-color: transparent !important;
-      margin: 0em;
-      padding: 1px 4px; }
-    .navbar .btn {
-      display: inline-block;
-      font-weight: 400;
-      line-height: 1.5;
+      justify-content: center;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none; }
+    #sidebar .offcanvas-body {
+      flex-grow: 1;
+      padding: 1rem 1rem;
+      overflow-y: auto; }
+  #offcanvasExample {
+    background-color: #b2926c;
+    border: none;
+    width: 100%; }
+    #offcanvasExample .nav-link {
+      text-align: left;
+      color: #fff;
+      opacity: 1;
+      font-size: 1.6rem; }
+      #offcanvasExample .nav-link:hover {
+        color: #000; }
+  .offcanvas-header h1 {
+    color: white;
+    border-bottom: 2px solid #fff;
+    padding: 1px; }
+  /*Styling för menyknapp*/
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #b2926c;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+    .btn .btn-primary,
+    .btn .btn:hover,
+    .btn .btn-primary:hover,
+    .btn .btn-primary:focus,
+    .btn .btn-check:focus {
       color: #b2926c;
       background-color: transparent !important;
       border-color: transparent !important;
-      font-size: 1.2rem;
-      border-radius: 0.25rem;
-      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-      .navbar .btn .btn-primary {
-        color: #b2926c;
-        background-color: transparent !important;
-        border-color: transparent !important; }
-      .navbar .btn .btn-primary:hover {
-        color: #b2926c;
-        background-color: transparent !important;
-        border-color: transparent !important; }
-      .navbar .btn .btn:hover {
-        color: #b2926c;
-        background-color: transparent !important;
-        border-color: transparent !important; }
-      .navbar .btn .btn-primary:focus,
-      .navbar .btn btn-check:focus {
-        color: #b2926c;
-        background-color: #fff !important;
-        border-color: #fff !important;
-        box-shadow: #fff !important; }
-        .navbar .btn .btn-primary:focus .btn-close,
-        .navbar .btn btn-check:focus .btn-close {
-          padding: 0.5rem 0.5rem;
-          margin-top: -0.5rem;
-          margin-right: -0.5rem;
-          margin-bottom: -0.5rem; }
+      box-shadow: transparent !important; }
+    .btn .bi-list {
+      font-size: 1.8rem; }
   main {
     display: flex;
     flex-direction: column;
@@ -198,34 +163,24 @@ li {
     padding-bottom: 50%;
     position: relative;
     z-index: 1; }
-  #offcanvasExample {
-    background-color: #b2926c;
-    border: none;
-    width: 100%; }
   section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly; }
-    section #offcanvasExample {
-      background-color: #b2926c;
-      border: none;
-      width: 100%; }
-    section section {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly; }
-      section section .product-container {
-        width: 250px;
-        height: 400px; }
-        section section .product-container img {
-          width: 225px; }
+    section .product-container {
+      width: 250px;
+      height: 400px; }
+      section .product-container img {
+        width: 225px; } }
+
+@media screen and (min-width: 300px) {
   .askUsAndFindUs {
     display: flex;
     flex-direction: row;
     gap: 30px; }
   /*Media query för 1000px*/ }
 
-@media screen and (min-width: 300px) and (min-width: 600px) and (min-width: 1000px) {
+@media screen and (min-width: 300px) and (min-width: 1000px) {
   .masthead {
     max-width: 100%;
     max-height: 100vh;
@@ -243,18 +198,13 @@ li {
   section {
     flex-wrap: nowrap;
     justify-content: space-around; }
-    section #offcanvasExample {
-      background-color: #b2926c;
-      border: none;
-      width: 100%; }
-    section section {
-      flex-wrap: nowrap;
-      justify-content: space-around; }
-      section section .product-container {
-        width: 275px;
-        height: 440px; }
-        section section .product-container img {
-          width: 250px; }
+    section .product-container {
+      width: 275px;
+      height: 440px; }
+      section .product-container img {
+        width: 250px; } }
+
+@media screen and (min-width: 300px) {
   .footer-row {
     display: flex;
     flex-direction: row;

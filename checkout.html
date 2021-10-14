@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -66,7 +67,7 @@
     </header>
 
 <!-- H1-texten i headern -->
-    <div class="mask" style="background-color: black;">
+    <div class="mask" style="background-color: #b2936c96;">
       <div class="d-flex justify-content-center align-items-center h-100">
         <div class="text-white">
           <h1 class="mb-1 py-1">OBSESSIONS</h1>
@@ -159,9 +160,35 @@
               />
               <label for="cvv">CVV</label>
               <input type="text" id="cvv" name="cvv" placeholder="352"required />
-              <div class="button">
-                <input type="submit" value="Skicka" class="btn-form"/>
-              </div>
+              
+              <!--- MODAL-KNAPP----->
+              <div class="modal-container">
+                <button type="button" class="btn btn-primary purchase-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Lägg order
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title display-6" id="staticBackdropLabel">Tack för din beställning!</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="lead">En bekräftelse på din order <strong>#2267453</strong> har skickats till din e-mailadress.</p>
+                        <p class="lead">
+                          <a class="btn btn-primary btn-sm tracking-btn" href="#tracking" role="button">Spåra din order</a>
+                        </p>
+                        <p class="lead">Har du frågor? <a href="#contact" class="contact-us">Kontakta oss!</a>
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary closing-btn" data-bs-dismiss="modal">Stäng</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>  
+              <!--------SLUT PÅ MODAL---------->
             </div>
           </div>
           </form>       

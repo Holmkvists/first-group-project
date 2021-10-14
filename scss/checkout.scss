@@ -3,11 +3,25 @@ body {
   height: auto;
   color: #000;
   font-size: 12pt;
+  font-family: "Work Sans", sans-serif;
 }
 
 h1,
-li {
+h3,
+h4,
+li,
+label {
   font-family: "Sora", sans-serif;
+}
+
+a {
+  color: #b2926c;
+  text-decoration: none;
+
+  &:hover {
+    color: #000;
+    transition: color 0.5s;
+  }
 }
 
 /*Media query för 300px*/
@@ -23,7 +37,6 @@ li {
     position: relative;
     z-index: 1;
   }
-
   /*Styling för navbaren*/
   .navbar {
     position: relative;
@@ -41,124 +54,79 @@ li {
       justify-content: space-between;
     }
 
-    /*Styling för navbaren*/
-    .navbar {
-      position: relative;
+    .container {
+      max-width: 100%;
+    }
+  }
+
+  #sidebar {
+    display: flex;
+    justify-content: flex-start;
+
+    .nav {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
+      justify-content: center;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+    }
+    .offcanvas-body {
+      flex-grow: 1;
+      padding: 1rem 1rem;
+      overflow-y: auto;
+    }
+  }
 
-      .navbar > .container {
-        display: flex;
-        flex-wrap: inherit;
-        align-items: center;
-        justify-content: space-between;
+  #offcanvasExample {
+    background-color: #b2926c;
+    border: none;
+    width: 100%;
+
+    .nav-link {
+      text-align: left;
+      color: #fff;
+      opacity: 1;
+      font-size: 1.6rem;
+      &:hover {
+        color: #000;
       }
     }
+  }
 
-    #sidebar {
-      display: flex;
-      justify-content: flex-start;
+  .offcanvas-header h1 {
+    color: white;
+    border-bottom: 2px solid #fff;
+    padding: 1px;
+  }
+}
 
-      .nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
-      }
-      .offcanvas-body {
-        flex-grow: 1;
-        padding: 1rem 1rem;
-        overflow-y: auto;
-      }
-    }
+/*Styling för menyknapp*/
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #b2926c;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  font-size: 1.2rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
-    #offcanvasExample {
-      background-color: #b2926c;
-      border: none;
-      width: 100%;
+  .btn-primary,
+  .btn:hover,
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-check:focus {
+    color: #b2926c;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: transparent !important;
+  }
 
-      .nav-link {
-        text-align: left;
-        color: #fff;
-        opacity: 1;
-        font-size: 1.6rem;
-        &:hover {
-          color: #000;
-        }
-      }
-    }
-
-    .offcanvas-header h1 {
-      color: white;
-      border-bottom: 2px solid #fff;
-      padding: 1px;
-    }
-
-    /*Styling för menyknapp*/
-
-    button {
-      color: -internal-light-dark(black, white);
-      display: inline-block;
-      text-align: center;
-      align-items: flex-start;
-      box-sizing: border-box;
-      background-color: transparent !important;
-      border-color: transparent !important;
-      margin: 0em;
-      padding: 1px 4px;
-    }
-
-    .btn {
-      display: inline-block;
-      font-weight: 400;
-      line-height: 1.5;
-      color: #b2926c;
-      background-color: transparent !important;
-      border-color: transparent !important;
-      font-size: 1.2rem;
-      border-radius: 0.25rem;
-      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
-      .btn-primary {
-        color: #b2926c;
-        background-color: transparent !important;
-        border-color: transparent !important;
-      }
-
-      .btn-primary:hover {
-        color: #b2926c;
-        background-color: transparent !important;
-        border-color: transparent !important;
-      }
-
-      .btn:hover {
-        color: #b2926c;
-        background-color: transparent !important;
-        border-color: transparent !important;
-      }
-
-      .btn-primary:focus,
-      btn-check:focus {
-        color: #b2926c;
-        background-color: #fff !important;
-        border-color: #fff !important;
-        box-shadow: #fff !important;
-
-        .btn-close {
-          padding: 0.5rem 0.5rem;
-          margin-top: -0.5rem;
-          margin-right: -0.5rem;
-          margin-bottom: -0.5rem;
-        }
-      }
-    }
+  .bi-list {
+    font-size: 1.8rem;
   }
 }
 
@@ -417,4 +385,40 @@ a:hover {
 .social-links {
   flex-direction: column;
   gap: 10px;
+}
+
+/*Styling för modal*/
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+.modal-dialog,
+.modal-content {
+  text-align: center;
+}
+
+#staticBackdropLabel {
+  color: #000 !important;
+}
+
+.purchase-btn,
+.tracking-btn {
+  color: #fff;
+  background-color: #b2926c !important;
+  border-color: transparent !important;
+}
+
+.closing-btn {
+  color: #000;
+  background-color: #fff !important;
+  border-color: transparent !important;
+
+  &:hover {
+    color: #000;
+    background-color: #fff !important;
+    border-color: transparent !important;
+  }
 }

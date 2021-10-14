@@ -242,7 +242,9 @@ a:hover {
   .askUsAndFindUs {
     display: flex;
     flex-direction: row;
-    gap: 30px; } }
+    gap: 30px; }
+  h3 {
+    margin: 10px; } }
 
 @media screen and (min-width: 1000px) {
   .masthead {

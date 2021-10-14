@@ -124,19 +124,19 @@ li {
           margin-right: -0.5rem;
           margin-bottom: -0.5rem; } }
 
-main {
+#main {
   display: flex;
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px; }
-  main section {
+  #main section {
     display: grid;
     grid-template-rows: 420px 140px 1fr;
     grid-template-areas: "product-container" "product-description" "checkout-form";
     justify-items: center;
     height: auto;
     gap: 50px; }
-    main section .product-container {
+    #main section .product-container {
       grid-area: product-container;
       display: flex;
       flex-direction: column;
@@ -144,14 +144,14 @@ main {
       width: 275px;
       background-color: rgba(211, 211, 211, 0.322);
       box-shadow: 0 0 5px 5px lightgray; }
-      main section .product-container img {
+      #main section .product-container img {
         margin-top: 10px;
         width: 250px; }
-      main section .product-container .price-tag {
+      #main section .product-container .price-tag {
         margin-top: 5px;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold; }
-    main section .product-description {
+    #main section .product-description {
       grid-area: product-description;
       display: flex;
       justify-content: center;
@@ -159,12 +159,12 @@ main {
       width: 275px;
       background-color: rgba(211, 211, 211, 0.322);
       box-shadow: 0 0 5px 5px lightgray; }
-      main section .product-description p {
+      #main section .product-description p {
         text-align: center;
         width: 250px;
         font-style: italic;
         margin-top: 10px; }
-    main section .checkout-form {
+    #main section .checkout-form {
       grid-area: checkout-form;
       border: 5px solid #cfa24f;
       width: 275px; }
@@ -249,20 +249,20 @@ a:hover {
     background-color: #b2926c;
     border: none;
     width: 100%; }
-  main section {
+  #main section {
     grid-template-rows: 570px 140px 1fr;
     gap: 50px; }
-    main section .product-container {
+    #main section .product-container {
       width: 375px;
       box-shadow: 0 0 10px 10px lightgray; }
-      main section .product-container img {
+      #main section .product-container img {
         width: 350px; }
-    main section .product-description {
+    #main section .product-description {
       width: 375px;
       box-shadow: 0 0 10px 10px lightgray; }
-      main section .product-description p {
+      #main section .product-description p {
         width: 350px; }
-    main section .checkout-form {
+    #main section .checkout-form {
       width: 375px; }
   .askUsAndFindUs {
     display: flex;
@@ -284,37 +284,34 @@ a:hover {
     background-color: #b2926c;
     border: none;
     width: 100%; }
-  main section {
+  #main section {
     grid-template-rows: 645px 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "product-container checkout-form" "product-description checkout-form";
     justify-content: space-evenly; }
-    main section .product-container {
+    #main section .product-container {
       width: 425px; }
-      main section .product-container img {
+      #main section .product-container img {
         width: 400px; }
-    main section .product-description {
+    #main section .product-description {
       width: 425px;
       height: 140px; }
-      main section .product-description p {
+      #main section .product-description p {
         width: 375px; }
-    main section .checkout-form {
-      width: 425px; } }
-
-.footer-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-evenly; }
-
-.ul {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  text-align: center;
-  padding: 0; }
-
-.social-links {
-  flex-direction: column;
-  gap: 10px; }
+    #main section .checkout-form {
+      width: 425px; }
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly; }
+  .ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    padding: 0; }
+  .social-links {
+    flex-direction: column;
+    gap: 10px; } }

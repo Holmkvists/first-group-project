@@ -152,24 +152,29 @@ section {
     padding: 20px;
     background-color: #b2936c96;
 }
+
 h4 {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
+
 .ul {
     list-style-type: none;
     text-align: center;
     padding: 0;
     color: white;
 }
+
 li {
     margin: 5px;
 }
+
 li:hover {
     background: #b2936cd0;
 }
+
 a:hover {
     color: white;
 }
@@ -179,10 +184,12 @@ a:hover {
     color: white;
     text-decoration: none;
 }
+
 .posision {
     color: white;
     text-decoration: none;
 }
+
 .social-links {
     display: flex;
     justify-content: center;
@@ -190,7 +197,8 @@ a:hover {
     gap: 30px;
 }
 
-/*Media query för 600px*/
+// TABLET (600-999px)
+
 @media screen and (min-width: 600px) {
     .masthead {
         max-width: 100%;
@@ -225,7 +233,8 @@ a:hover {
     gap: 30px;
 }
 
-/*Media query för 1000px*/
+// DESKTOP (1000px+)
+
 @media screen and (min-width: 1000px) {
     .masthead {
         max-width: 100%;
@@ -267,6 +276,7 @@ a:hover {
     align-items: flex-start;
     justify-content: space-evenly;
 }
+
 .ul {
     display: flex;
     flex-direction: column;

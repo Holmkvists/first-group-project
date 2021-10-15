@@ -61,19 +61,20 @@ a {
       flex-grow: 1;
       padding: 1rem 1rem;
       overflow-y: auto; }
-  .navbar #offcanvasExample {
-    background-color: #b2926c;
-    opacity: 0.8;
-    border: none;
-    width: 100%; }
-    .navbar #offcanvasExample .nav-link {
-      text-align: left;
-      color: #fff;
-      opacity: 1;
-      font-size: 1.6rem; }
-      .navbar #offcanvasExample .nav-link:hover {
-        color: #000; }
-  .navbar .offcanvas-header h1 {
+
+#offcanvasExample {
+  background-color: #b2926c;
+  opacity: 0.8;
+  border: none;
+  width: 100%; }
+  #offcanvasExample .nav-link {
+    text-align: left;
+    color: #fff;
+    opacity: 1;
+    font-size: 1.6rem; }
+    #offcanvasExample .nav-link:hover {
+      color: #000; }
+  #offcanvasExample .offcanvas-header h1 {
     color: white;
     border-bottom: 2px solid #fff;
     padding: 1px; }
@@ -88,7 +89,7 @@ a {
   border-color: transparent !important;
   font-size: 1.2rem;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   .btn .btn-primary,
   .btn .btn:hover,
   .btn .btn-primary:hover,
@@ -109,7 +110,7 @@ main {
   main section {
     display: grid;
     grid-template-rows: 420px 140px 1fr;
-    grid-template-areas: "product-container" "product-description" "checkout-form";
+    grid-template-areas: "product-container" "product-description" "checkout-form";
     justify-items: center;
     height: auto;
     gap: 50px; }
@@ -266,7 +267,7 @@ a:hover {
   main section {
     grid-template-rows: 645px 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "product-container checkout-form" "product-description checkout-form";
+    grid-template-areas: "product-container checkout-form" "product-description checkout-form";
     justify-content: space-evenly; }
     main section .product-container {
       width: 425px; }

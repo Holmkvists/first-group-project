@@ -41,6 +41,7 @@ li {
 
 #offcanvasExample {
   background-color: #b2926c;
+  opacity: 0.8;
   border: none;
   width: 100%; }
   #offcanvasExample .nav-link {
@@ -66,7 +67,7 @@ li {
   border-color: transparent !important;
   font-size: 1.2rem;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   .btn .btn-primary,
   .btn .btn:hover,
   .btn .btn-primary:hover,

@@ -24,39 +24,37 @@ a {
   }
 }
 
-/*Media query för 300px*/
-@media screen and (min-width: 300px) {
-  .masthead {
-    max-width: 100%;
-    max-height: 100vh;
-    background-image: url("../assets/images/4_web.jpg");
-    background-size: 100% auto !important;
-    background-position: top right;
-    background-repeat: no-repeat;
-    padding-bottom: 50%;
-    position: relative;
-    z-index: 1;
-  }
-  /*Styling för navbaren*/
-  .navbar {
-    position: relative;
+.masthead {
+  max-width: 100%;
+  max-height: 100vh;
+  background-image: url("../assets/images/4_web.jpg");
+  background-size: 100% auto !important;
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding-bottom: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+/*Styling för navbaren*/
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  .navbar > .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  }
 
-    .navbar > .container {
-      display: flex;
-      flex-wrap: inherit;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .container {
-      max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
   }
 
   #sidebar {
@@ -77,21 +75,21 @@ a {
       overflow-y: auto;
     }
   }
+}
 
-  #offcanvasExample {
-    background-color: #b2926c;
-    opacity: 0.8;
-    border: none;
-    width: 100%;
+#offcanvasExample {
+  background-color: #b2926c;
+  opacity: 0.8;
+  border: none;
+  width: 100%;
 
-    .nav-link {
-      text-align: left;
-      color: #fff;
-      opacity: 1;
-      font-size: 1.6rem;
-      &:hover {
-        color: #000;
-      }
+  .nav-link {
+    text-align: left;
+    color: #fff;
+    opacity: 1;
+    font-size: 1.6rem;
+    &:hover {
+      color: #000;
     }
   }
 
@@ -280,6 +278,7 @@ a:hover {
     border: none;
     width: 100%;
   }
+
   main {
     section {
       grid-template-rows: 570px 140px 1fr;
@@ -305,6 +304,10 @@ a:hover {
 
       .checkout-form {
         width: 375px;
+
+        .container-checkout {
+          box-shadow: 0 0 10px 10px lightgray;
+        }
       }
     }
   }

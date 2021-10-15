@@ -303,6 +303,10 @@ a:hover {
 
             .checkout-form {
                 width: 375px;
+
+                .container-checkout {
+                    box-shadow: 0 0 10px 10px lightgray;
+                }
             }
         }
     }

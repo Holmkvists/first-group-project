@@ -238,6 +238,8 @@ a:hover {
         width: 350px; }
     main section .checkout-form {
       width: 375px; }
+      main section .checkout-form .container-checkout {
+        box-shadow: 0 0 10px 10px lightgray; }
   .askUsAndFindUs {
     display: flex;
     flex-direction: row;
